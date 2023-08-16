@@ -1,38 +1,100 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-page {
+  /* background-color: antiquewhite; */
+  padding: 0 auto;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+Form {
+  /* background-color: aquamarine; */
+  padding: 1.2rem;
+  border-radius: 1rem;
+  width: 25rem;
+  border: 1px solid #cfcfcf;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* dashboard */
+
+.dashboard-title {
+  font-size: 25px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.button-update,
+.button-dashboard {
+  width: 100%;
+}
+
+.button-dashboard-logout {
+  margin-top: 1rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+/* login */
+
+.update-title,
+.login-title,
+.singup-title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.03rem;
+}
+
+.button-reset-password,
+.button-update,
+.button-singup,
+.button-login {
+    width: 100%;
+}
+
+/* Sign up */
+
+.button-signup-have-account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.button-signup-have-account span {
+  margin: 0;
+  padding: 0;
+}
+
+.button-signup-login {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  color: #0d6efd;
+  margin-left: 5px;
+}
+
+.button-forgot-password-login,
+.button-login-forgot-password{
+  margin-top: 1rem;
+  text-decoration: underline;
+  color: #0d6efd;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+
+/* Update */
+
+.button-update-cansel {
+  background-color: transparent;
+  border: none;
+  margin-top: 1rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-decoration: underline;
+  color: #0d6efd;
 }
